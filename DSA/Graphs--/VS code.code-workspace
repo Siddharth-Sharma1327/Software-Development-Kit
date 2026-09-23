@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "C:/Users/siddharth/OneDrive/Desktop/VS code"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp",
+			"ostream": "cpp",
+			"algorithm": "cpp",
+			"array": "cpp",
+			"*.tcc": "cpp",
+			"string": "cpp",
+			"vector": "cpp",
+			"exception": "cpp",
+			"functional": "cpp",
+			"istream": "cpp",
+			"limits": "cpp",
+			"sstream": "cpp",
+			"streambuf": "cpp",
+			"new": "cpp",
+			"deque": "cpp",
+			"list": "cpp",
+			"unordered_map": "cpp",
+			"unordered_set": "cpp"
+		}
+	}
+}

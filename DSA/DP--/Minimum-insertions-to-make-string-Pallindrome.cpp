@@ -1,0 +1,31 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+
+// --------------IDEA---------------(Minimum insertions to make any string pallindrome is equal to length of string - length of longest pallindromic subsequence(lps))
+int minInsertion(string &str)
+{
+    // Write your code here.
+    string s = str;
+	int n = s.length();
+	int m = n;
+    string t = s;
+    reverse(t.begin(), t.end());
+	vector<int> prev(m+1, 0), cur(m+1, 0);
+	for(int i=1;i<=n;i++){
+		for(int j=1;j<=m;j++){
+
+			if(s[i-1]==t[j-1]) cur[j] = 1 + prev[j-1];
+			else cur[j] = max(prev[j], cur[j-1]);
+				
+		}
+		prev = cur;
+	}
+	return n - prev[m];
+
+}
+
+int main(){
+    return 0;
+}
