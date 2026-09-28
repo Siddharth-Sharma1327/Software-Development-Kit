@@ -9,10 +9,14 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+ 
 class Solution {
 public:
-    int maxDepth(TreeNode* root) {
-        if(root == NULL) return 0;
-        return 1 + max(maxDepth(root->left), maxDepth(root->right));
+    bool isSameTree(TreeNode* p, TreeNode* q) {
+        if(p == NULL || q == NULL) return (p == q);
+        return (p->val == q->val) 
+            && isSameTree(p->left, q->left) 
+            && isSameTree(p->right, q->right);
     }
 };
