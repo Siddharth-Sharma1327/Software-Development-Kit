@@ -23,3 +23,6 @@ public:
         return dfs(root->left, root->right);
     }
 };
+
+// Algo
+// 1) start multi-source recursion for left and right nodes and compare vice versa for mirror image

@@ -88,3 +88,8 @@ class Solution {
 // recursion
 // T.C -> O(N)*O(Log(Col)) + O(Col)
 // S.C -> O(H)=O(N) + O(Col)
+
+
+// Algo
+// 1) store a map by going on left first and then to right and update val for each col in it with checking levels
+// 2) need to store levels as well beacuse lower level for same column might update higher level val for same col which ietrated earlier
