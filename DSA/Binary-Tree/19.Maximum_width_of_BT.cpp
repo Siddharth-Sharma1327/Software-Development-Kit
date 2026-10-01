@@ -35,3 +35,11 @@ public:
         return ans;
     }
 };
+
+// Algo
+// 1) store {node, index} in queue and find lastIndex - firstIndex for each level
+// 2) now doing this for left/right skewed tree the indedx values will overflow, so we do shifting of index for each level
+// 3) all nodes indices in each level start from 0 from left to right
+
+// T.C -> O(N)
+// S.C -> O(N)
