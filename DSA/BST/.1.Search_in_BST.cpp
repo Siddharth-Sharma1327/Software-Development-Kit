@@ -17,3 +17,9 @@ public:
         return ((val < root->val) ? searchBST(root->left, val) : searchBST(root->right, val));
     }
 };
+
+// Node->val < root->val => left subtree
+// Node->val > root->val => right subtree
+
+// T.C -> O(h) where h is the height of the tree = O(logn) for balanced BST and O(n) for skewed BST
+// S.C -> O(h) for recursive stack space
